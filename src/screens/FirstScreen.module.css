@@ -1,0 +1,206 @@
+
+.container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  background: linear-gradient(rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.1));
+}
+
+.description {
+  font-size: 1.2rem;
+  font-family: "AssistantR";
+  text-align: center;
+  margin: 1% auto;
+  direction: rtl;
+  font-weight: 300;
+  width: 90%;
+  color: black;
+}
+
+.imageContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  display: flex;
+}
+
+.backgroundImage {
+  flex: 1;
+  height: 100%;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.backgroundImage::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.1));
+}
+
+.leftImage, .rightImage {
+  display: none;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in forwards;
+}
+
+.centerImage {
+  background-image: url('../images/קלוד\ נגר\ תמונה\ ראשית.png');
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in forwards;
+}
+
+.contentBox {
+  text-align: center;
+  padding: 2rem;
+  width: 90%;
+  backdrop-filter: blur(8px);
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  z-index: 1;
+  transform: translateY(20%);
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  position: relative;
+  overflow: hidden;
+  animation: slideUp 1.2s ease-out forwards;
+}
+
+.contentBox::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  animation: shimmer 8s linear infinite;
+}
+
+.contentBox::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  padding: 2px;
+  background: linear-gradient(45deg, rgba(255,255,255,0.1), rgba(255,255,255,0.3));
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: destination-out;
+}
+
+.title {
+  font-family: 'Philisofer', serif;
+  font-size: 2.8rem;
+  font-weight: 500;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+ 
+  position: relative;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1.5s ease-in forwards, glow 4s ease-in-out infinite;
+}
+
+@keyframes glow {
+  0%, 100% { text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); }
+  50% { text-shadow: 0 0 8px rgba(255, 255, 255, 0.5); }
+}
+
+@keyframes shimmer {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30%) scale(0.95);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(25%) scale(0.97);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(20%) scale(1);
+  }
+}
+
+/* Media Queries */
+@media (max-width: 350px) {
+  .contentBox { padding: 0.5rem; width: 90%; }
+  .title { font-size: 2.2rem; }
+}
+
+@media (min-width: 350px) {
+  .contentBox { padding: 0.7rem; width: 90%; }
+  .title { font-size: 2.3rem; }
+}
+
+@media (min-width: 450px) {
+  .contentBox { padding: 1.5rem; width: 85%; }
+  .title { font-size: 2.4rem; }
+}
+
+@media (min-width: 550px) {
+  .leftImage {
+    display: block;
+    background-image: url('../images/קלוד\ נגר\ עבודות\ 2.png');
+  }
+  .rightImage {
+    display: block;
+    background-image: url('../images/קלוד\ נגר\ עבודות\ 12.png');
+  }
+  .contentBox { padding: 1.8rem; width: 80%; }
+  .title { font-size: 2.5rem; }
+}
+
+@media (min-width: 650px) {
+  .contentBox { padding: 2rem; width: 75%; }
+  .title { font-size: 2.6rem; }
+}
+
+@media (min-width: 750px) {
+  .contentBox { width: 70%; }
+  .title { font-size: 2.7rem; }
+}
+
+@media (min-width: 850px) {
+  .contentBox { width: 65%; }
+}
+
+@media (min-width: 950px) {
+  .contentBox { width: 60%; }
+  .title { font-size: 2.8rem; }
+}
+
+@media (min-width: 1050px) {
+  .contentBox { width: 30%; }
+}
+
+@media (min-width: 1150px) {
+  .contentBox { width: 30%; }
+}
