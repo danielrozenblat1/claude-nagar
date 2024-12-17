@@ -57,7 +57,7 @@
 }
 
 .centerImage {
-  background-image: url('../images/קלוד\ נגר\ תמונה\ ראשית.png');
+  background-image: url('../images/קלוד\ נגר\ תדמית.png');
   opacity: 0;
   animation: fadeIn 1.5s ease-in forwards;
 }

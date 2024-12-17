@@ -22,7 +22,7 @@ import result17 from "../../images/קלוד נגר עבודות 17.png";
 import result18 from "../../images/קלוד נגר עבודות 18.png";
 import result19 from "../../images/קלוד נגר עבודות 19.png";
 
-const Recommendations = () => {
+const Recommendations = (props) => {
   const images = [
     result1, result2, result3, result4, result5, result6, result7, result8, result9,
     result10, result11, result12, result13, result14, result15, result16, result17, result18, result19
@@ -30,7 +30,7 @@ const Recommendations = () => {
 
   return (
     <>
-      <div className={styles.title} id="כלה לעתיד">לפני שנתחיל..</div>
+      <div className={styles.title} id="כלה לעתיד">{props.title}</div>
       <div className={styles.explain}>
         מקבץ בנות שעברו דרכי
       </div>

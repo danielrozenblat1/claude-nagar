@@ -1,3 +1,4 @@
+import Button from "../components/button/Button"
 import FAQItem from "../components/questions/Questions"
 import styles from "./ForthScreen.module.css"
 
@@ -39,7 +40,7 @@ const ForthScreen = () => {
             question="איך אוכל להיות בטוחה שהשיער יחזיק לאורך כל האירוע?" 
             answer="אני משתמש בטכניקות מקצועיות ובמוצרי שיער איכותיים שמבטיחים עמידות לאורך זמן. התסרוקת מתוכננת כך שתחזיק מעמד גם בתנאי מזג אוויר שונים ובמהלך הריקודים. בנוסף, אני מציע שירות של תסרוקת שנייה במהלך האירוע לרענון המראה."
         />
-
+<Button text="קלוד, בוא נדבר!"/>
     </>
 }
 
