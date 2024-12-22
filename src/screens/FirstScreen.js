@@ -7,6 +7,7 @@ import middleImage from "../images/קלוד נגר עבודות 2.png";
 import rightImage from "../images/קלוד נגר עבודות 12.png"
 import leftImage from "../images/קלוד נגר עבודות 2.png"
 import GlassButton from '../components/ButtonScroll/ScrollButton';
+import Loader from '../components/loader/Loader';
 // import GradientLoader from '../components/loader/Loader';
 const FirstScreen = () => {
   const [imagesLoaded, setImagesLoaded] = useState(false);
@@ -32,9 +33,9 @@ const FirstScreen = () => {
       .catch((err) => console.error("Failed to load images", err));
   }, []);
 
-//   if (!imagesLoaded) {
-//     return <GradientLoader/>;
-//   }
+  if (!imagesLoaded) {
+    return <Loader/>;
+  }
 
   return (
     <div className={styles.container}>
