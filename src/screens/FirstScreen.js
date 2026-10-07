@@ -3,9 +3,9 @@ import { Link as ScrollLink } from 'react-scroll';
 
 import styles from './FirstScreen.module.css';
 
-import middleImage from "../images/קלוד נגר עבודות 2.png";
-import rightImage from "../images/קלוד נגר עבודות 12.png"
-import leftImage from "../images/קלוד נגר עבודות 2.png"
+import middleImage from "../images/עמנואל נגר עבודות 2.png";
+import rightImage from "../images/עמנואל נגר עבודות 12.png"
+import leftImage from "../images/עמנואל נגר עבודות 2.png"
 import GlassButton from '../components/ButtonScroll/ScrollButton';
 import Loader from '../components/loader/Loader';
 // import GradientLoader from '../components/loader/Loader';
@@ -46,7 +46,7 @@ const FirstScreen = () => {
       </div>
       
       <div className={styles.contentBox}>
-        <h1 className={styles.title}>CLAUDE NAGAR</h1>
+        <h1 className={styles.title}>EMANUEL NAGAR</h1>
   
         <div className={styles.buttonContainer}>
         <GlassButton text="אני כלה לעתיד" targetId="כלה לעתיד"/>

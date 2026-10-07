@@ -4,7 +4,7 @@ const Button =(props)=>{
     const handleButtonClick = () => {
         const phoneNumber = "+972543216567";
         // Set the message content
-        const message =props.message ? props.message :"היי קלוד ,אני רוצה לשמוע ממך עוד על..";
+        const message =props.message ? props.message :"היי עמנואל ,אני רוצה לשמוע ממך עוד על..";
     
         // Encode the message for the URL
         const encodedMessage = encodeURIComponent(message);

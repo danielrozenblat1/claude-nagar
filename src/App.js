@@ -24,7 +24,7 @@ function App() {
   <FifthScreen/>
   <ForthScreen/>
   <PrivacyPolicy 
-  ownerName="קלוד נגר" 
+  ownerName="עמנואל נגר" 
 
   phone="+972 54-321-6567" 
   domain="https://claudenagar.co.il/" 

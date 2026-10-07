@@ -2,17 +2,17 @@ import React from 'react';
 import styles from './Brides.module.css';
 
 // Import your images
-import result1 from "../../images/קלוד נגר המלצות 1.png";
-import result2 from "../../images/קלוד נגר המלצות 2.png";
-import result3 from "../../images/קלוד נגר המלצות 3.png";
-import result4 from "../../images/קלוד נגר המלצות 4.png";
-import result5 from "../../images/קלוד נגר המלצות 5.png";
-import result6 from "../../images/קלוד נגר המלצות 6.png";
-import result7 from "../../images/קלוד נגר המלצות 7.png";
-import result8 from "../../images/קלוד נגר המלצות 8.png";
-import result9 from "../../images/קלוד נגר המלצות 9.png";
-import result10 from "../../images/קלוד נגר המלצות 10.png";
-import result11 from "../../images/קלוד נגר המלצות 11.png";
+import result1 from "../../images/עמנואל נגר המלצות 1.png";
+import result2 from "../../images/עמנואל נגר המלצות 2.png";
+import result3 from "../../images/עמנואל נגר המלצות 3.png";
+import result4 from "../../images/עמנואל נגר המלצות 4.png";
+import result5 from "../../images/עמנואל נגר המלצות 5.png";
+import result6 from "../../images/עמנואל נגר המלצות 6.png";
+import result7 from "../../images/עמנואל נגר המלצות 7.png";
+import result8 from "../../images/עמנואל נגר המלצות 8.png";
+import result9 from "../../images/עמנואל נגר המלצות 9.png";
+import result10 from "../../images/עמנואל נגר המלצות 10.png";
+import result11 from "../../images/עמנואל נגר המלצות 11.png";
 import Button from '../button/Button';
 
 
@@ -57,7 +57,7 @@ const Brides = () => {
           </div>
         </div>
       </div>
-      <Button text="קלוד, בוא נדבר!"/>
+      <Button text="עמנואל, בוא נדבר!"/>
     </>
   );
 };

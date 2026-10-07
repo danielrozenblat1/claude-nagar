@@ -28,7 +28,7 @@
 .scrollTrack {
   display: flex;
   width: fit-content;
-  animation: scroll 50s linear infinite;
+  animation: scroll 84s linear infinite;
   gap: 20px; /* מרווח בין הקבוצות */
 }
 

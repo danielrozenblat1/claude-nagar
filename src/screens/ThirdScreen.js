@@ -3,13 +3,13 @@ import Recommendations from "../components/recommends/Recommends"
 import Timeline from "../components/steps/Steps"
 import VideoGallery from "../components/studioVideos/StudioVideos"
 import styles from "./ThirdScreen.module.css"
-import fun from "../videos/קלוד נגר סרטון אווירה.mp4"
+import fun from "../videos/עמנואל נגר סרטון אווירה.mp4"
 import Button from "../components/button/Button"
 const ThirdScreen=()=>{
-const videos=[{src:fun,alt:"קלוד נגר"}]
+const videos=[{src:fun,alt:"עמנואל נגר"}]
 
 return <>
-    <div className={styles.title}>קלוד, איך קורה הקסם?</div>
+    <div className={styles.title}>עמנואל, איך קורה הקסם?</div>
     <Timeline/>
     <div className={styles.title}>ואם נסכם..</div>
     <VideoGallery videos={videos}/>

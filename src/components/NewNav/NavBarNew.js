@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link as ScrollLink } from "react-scroll";
 import styles from './NavBarNew.module.css';
-import logo from "../../images/קלוד נגר לוגו.png"
+import logo from "../../images/עמנואל נגר לוגו.png"
 
 import { FaInstagram, FaFacebook, FaWhatsapp, FaBars, FaTimes } from 'react-icons/fa';
 
@@ -42,7 +42,7 @@ const NavBarNew = () => {
 
   const handleClick = () => {
     const phoneNumber = "+972543216567";
-    const message = "היי קלוד ,אני רוצה לשמוע ממך עוד על..";
+    const message = "היי עמנואל ,אני רוצה לשמוע ממך עוד על..";
     const encodedMessage = encodeURIComponent(message);
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
     window.open(whatsappURL, "_blank");
@@ -91,7 +91,7 @@ const NavBarNew = () => {
               </ScrollLink>
             ))}
             <div className={styles.center}>
-              <img className={styles.image} src={logo} alt="קלוד נגר לוגו"/>
+              <img className={styles.image} src={logo} alt="עמנואל נגר לוגו"/>
             </div>
           </div>
         </div>
@@ -117,7 +117,7 @@ const NavBarNew = () => {
         </div>
       )}
       <div className={styles.socialIcons}>
-        <a href="https://www.instagram.com/claude_nagar/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+        <a href="https://www.instagram.com/emanuel.nagar/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
         <a onClick={handleClick}><FaWhatsapp /></a>
         
       </div>
